@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/empass-assignment/static/css/main.41b0666b.css",
-    "main.js": "/empass-assignment/static/js/main.a38ead6d.js",
+    "main.js": "/empass-assignment/static/js/main.87577417.js",
     "index.html": "/empass-assignment/index.html",
     "main.41b0666b.css.map": "/empass-assignment/static/css/main.41b0666b.css.map",
-    "main.a38ead6d.js.map": "/empass-assignment/static/js/main.a38ead6d.js.map"
+    "main.87577417.js.map": "/empass-assignment/static/js/main.87577417.js.map"
   },
   "entrypoints": [
     "static/css/main.41b0666b.css",
-    "static/js/main.a38ead6d.js"
+    "static/js/main.87577417.js"
   ]
 }
