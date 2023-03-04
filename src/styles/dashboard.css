@@ -1,0 +1,113 @@
+@import url(app.css);
+
+.dashboard {
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 25px 0 0 0;
+  padding: 1rem 1rem;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.3rem;
+  width: 100%;
+  height: 100%;
+}
+
+.graph {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0 auto;
+}
+
+.score-container {
+  width: 100%;
+}
+
+.score-graph {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.graph-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.light-text {
+  color: rgb(165, 165, 165);
+}
+
+.card-container {
+  border-radius: 10px;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.graph-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.dropdown-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+select {
+  outline: none;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid rgb(177, 177, 177);
+}
+
+option {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.rank-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .score-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .dashboard {
+    width: 90vw;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    width: 100%;
+  }
+  .score-container {
+    width: 100%;
+  }
+}

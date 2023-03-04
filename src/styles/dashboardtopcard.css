@@ -1,0 +1,47 @@
+@import url(app.css);
+
+.dashboard-top-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.top-icon-container {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.top-icon-container svg {
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+.top-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+
+.top-card-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.top-card-values {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-card-values strong {
+  font-weight: 500;
+  font-size: 1.2rem;
+}

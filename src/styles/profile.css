@@ -1,0 +1,219 @@
+@import url(app.css);
+
+.profile {
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 450px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.profile-background {
+  position: relative;
+  width: 100%;
+}
+
+.profile-background-pic {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+
+.profile-background span {
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  width: 100%;
+  height: 96%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.343);
+  z-index: 1;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 1.7rem;
+  border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 5px solid rgb(255, 255, 255);
+  margin-top: -45px;
+  z-index: 3;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.profile-name {
+  font-weight: 400;
+  text-align: center;
+}
+
+.profile-email {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.profile-other-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.profile-other-info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.profile-tests span,
+.profile-followers span {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.card-heading {
+  font-size: 0.9rem;
+}
+
+.profile-earning {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid rgb(205, 205, 205);
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.profile-earning-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-earning-top svg {
+  color: rgb(127, 127, 127);
+}
+
+.profile-earning-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.progress {
+  position: relative;
+  margin: 4px;
+  float: left;
+  text-align: center;
+}
+
+.barOverflow {
+  position: relative;
+  overflow: hidden;
+  width: 90px;
+  height: 45px;
+  margin-bottom: -14px;
+}
+
+.bar {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 7px solid #eee;
+  border-bottom-color: green;
+  border-left-color: green;
+}
+
+.progress span {
+  color: green;
+}
+
+.sub-text {
+  font-size: 0.8rem;
+}
+
+.profile-earning-stats {
+  margin-top: 0.7rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.last-test {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid rgb(205, 205, 205);
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.last-test-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.last-test-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.last-test-rank {
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: var(--secondary);
+  color: var(--white);
+  font-size: 0.85rem;
+}
+
+.last-test-content {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 900px) {
+  .profile {
+    width: 100%;
+  }
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+  .profile-background span {
+    width: 100%;
+    height: 98%;
+  }
+}
