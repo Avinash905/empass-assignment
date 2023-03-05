@@ -3,7 +3,7 @@ import "../styles/bookconsult.css";
 import { IoMdClose } from "react-icons/io";
 import toast from "react-hot-toast";
 
-const BookAppointment = ({ setModalOpen }) => {
+const BookConsult = ({ setModalOpen }) => {
   const [formDetails, setFormDetails] = useState({
     date: "",
     time: "",
@@ -34,8 +34,8 @@ const BookAppointment = ({ setModalOpen }) => {
             }}
             className="close-btn"
           />
-          <div className="register-container flex-center book">
-            <form className="register-form">
+          <div className="login-container flex-center book">
+            <form className="login-form">
               <select
                 name="expert"
                 id="expert"
@@ -74,4 +74,4 @@ const BookAppointment = ({ setModalOpen }) => {
   );
 };
 
-export default BookAppointment;
+export default BookConsult;

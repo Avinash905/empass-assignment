@@ -204,6 +204,11 @@
   font-size: 0.9rem;
 }
 
+.consult-btn {
+  font-size: 0.8rem;
+  padding: 0.3rem 1rem;
+}
+
 @media screen and (max-width: 900px) {
   .profile {
     width: 100%;

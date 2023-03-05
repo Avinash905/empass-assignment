@@ -21,7 +21,7 @@ function Login() {
   const formSubmit = (e) => {
     e.preventDefault();
     toast.success("Login Success");
-    navigate("/dashboard");
+    navigate("/empass-assignment/dashboard");
   };
 
   return (

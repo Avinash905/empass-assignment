@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import BookConsult from "./BookConsult";
 import "../styles/profile.css";
 
 const Profile = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <section className="profile">
       <div className="profile-container">
@@ -23,6 +26,12 @@ const Profile = () => {
             <h4 className="profile-name">John</h4>
             <span className="profile-email light-text">john@gmail.com</span>
           </div>
+          <button
+            className="btn consult-btn"
+            onClick={() => setModalOpen(true)}
+          >
+            Consult
+          </button>
           <div className="profile-other-info">
             <div className="profile-tests">
               <h4>105</h4>
@@ -59,6 +68,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
+      {modalOpen && <BookConsult setModalOpen={setModalOpen} />}
     </section>
   );
 };
